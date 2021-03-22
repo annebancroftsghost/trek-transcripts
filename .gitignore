@@ -4,3 +4,5 @@
 Lib/
 
 Scripts/
+
+src/__pycache__/

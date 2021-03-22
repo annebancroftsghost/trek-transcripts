@@ -1,4 +1,5 @@
 from ParseUtils import get_series_parsed_episodes
+import json
 
 
 def run_parser():
@@ -14,3 +15,5 @@ def run_parser():
 
 
 parsed = run_parser()
+with open('parsed_episodes.json', 'w') as fileout:
+    json.dump(parsed, fileout)
